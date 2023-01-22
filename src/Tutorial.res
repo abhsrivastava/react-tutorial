@@ -1,15 +1,14 @@
-@module external styles: {..} = "./main.css"
+@module external styles: {..} = "./Tutorial.css"
 
 @react.component
 let make = () => {
-  <header>
-    <h1> { React.string("This is my tutorial") } </h1>
-    <nav>
-      <ul className={styles["menu"]}>
-        <li> { React.string("Menu") } </li>
-        <li> { React.string("About") } </li>
-        <li> { React.string("Contact") } </li>
-      </ul>
-    </nav>
-  </header>
+  Js.log(styles);
+  <div>
+    <h1>{"Welcome to my app" -> React.string}</h1>
+    <ul className={styles["menu"]}>
+      <li className={styles["menu-item"]}>{"Company" -> React.string}</li>
+      <li className={styles["menu-item"]}>{"Mission" -> React.string}</li>
+      <li className={styles["menu-item"]}>{"Values" -> React.string}</li>
+    </ul>
+  </div>
 }

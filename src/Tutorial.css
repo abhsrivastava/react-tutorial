@@ -1,0 +1,9 @@
+.menu {
+  list-style-type: none;
+  background-color: blue;
+}
+
+.menu-item {
+  display: inline;
+  color: red;
+}
