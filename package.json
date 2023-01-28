@@ -2,7 +2,7 @@
   "name": "react-tutorial",
   "version": "0.1.0",
   "scripts": {
-    "clean": "npx rescript clean --with-deps",
+    "clean": "npx rescript clean -with-deps",
     "build": "npx rescript build && webpack",
     "watch": "npx rescript build -w",
     "server": "webpack-dev-server"
