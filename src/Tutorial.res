@@ -1,15 +1,16 @@
-//@module external styles: {..} = "./Tutorial.css"
-%%raw("import './Tutorial.css'")
+@module external styles: {..} = "./Tutorial.module.css"
+//%%raw("import './Tutorial.css'")
 
 @react.component
 let make = () => {
+  Js.log(styles);
   <div>
     <h1>{"Welcome to my app" -> React.string}</h1>
-    <ul className="menu">
-      <li className="menu-item">{"Company" -> React.string}</li>
-      <li className="menu-item">{"Mission" -> React.string}</li>
-      <li className="menu-item">{"Values" -> React.string}</li>
-      <li className="menu-item">{"Leadership" -> React.string}</li>
+    <ul className={styles["menu"]}>
+      <li className={styles["menu-item"]}>{"Company" -> React.string}</li>
+      <li className={styles["menu-item"]}>{"Mission" -> React.string}</li>
+      <li className={styles["menu-item"]}>{"Values" -> React.string}</li>
+      <li className={styles["menu-item"]}>{"Leadership" -> React.string}</li>
     </ul>
   </div>
 }
