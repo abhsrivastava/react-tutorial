@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 const outputDir = path.join(__dirname, "build/");
 
 module.exports = {
@@ -13,7 +14,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       inject: false
-    })    
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {from: "src/images", to: "images"}
+      ]
+    })
   ],
   devServer: {
     compress: true, 
