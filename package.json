@@ -5,7 +5,7 @@
     "clean": "npx rescript clean -with-deps",
     "build": "npx rescript build && webpack",
     "watch": "npx rescript build -w",
-    "server": "webpack-dev-server"
+    "serve": "webpack-dev-server"
   },
   "keywords": [
     "ReScript"

@@ -1,0 +1,33 @@
+.menu {
+  list-style: none;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  padding: 30px 20px;
+  height: 90px;
+}
+
+.nav > h3 {
+  margin: 0px;
+  color: #61DAFB;
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.nav-logo {
+  width: 70px;
+}
+
+.menu > li {
+  padding: 0 20px 0 20px;
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #DEEBF8;
+}

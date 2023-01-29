@@ -1,0 +1,33 @@
+.container {
+  background-color: #282d35;
+  background-image: url("../images/React-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  filter: grayscale(100%);
+  height: 80vh;
+}
+.main-heading {
+  margin-top: 0px;
+  padding-top: 25px;
+  margin-left: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 40px;
+}
+.main-facts {
+  margin-top: 25px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.main-facts > li {
+  line-height: 20px;
+  padding-block: 10px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4em;
+  color: #61DAFB;
+}

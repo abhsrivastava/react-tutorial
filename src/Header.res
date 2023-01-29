@@ -1,14 +1,15 @@
-@module("./Header.css") external styles: {..} = "default"
+@module("./styles/Header.css") external styles: {..} = "default"
 
 @react.component
 let make = () => {
   <header>
-    <nav>
-      <img src="images/React-icon.png" width="40px" />
+    <nav className={styles["nav"]}>
+      <img src="images/React-icon.png" className={styles["nav-logo"]} />
+      <h3>{"ReactFacts" -> React.string}</h3>
       <ul className={styles["menu"]}>
-        <li className={styles["menu-item"]}>{"Pricing" -> React.string}</li>
-        <li className={styles["menu-item"]}>{"About" -> React.string}</li>
-        <li className={styles["menu-item"]}>{"Contacts" -> React.string}</li>
+        <li>{"Pricing" -> React.string}</li>
+        <li>{"About" -> React.string}</li>
+        <li>{"Contacts" -> React.string}</li>
       </ul>
     </nav>
   </header>
